@@ -23,6 +23,7 @@ use Sylius\Component\Resource\Factory\FactoryInterface;
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\RequestStack;
 use Webmozart\Assert\Assert;
+use Sylius\Component\Order\Modifier\OrderItemQuantityModifierInterface;
 
 class CartItemFactory implements CartItemFactoryInterface
 {
