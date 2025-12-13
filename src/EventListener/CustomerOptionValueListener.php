@@ -30,7 +30,7 @@ final class CustomerOptionValueListener
 
     public function prePersist(PrePersistEventArgs $args): void
     {
-        $entity = $args->getEntity();
+        $entity = $args->getObject();
 
         if ($entity instanceof CustomerOptionValueInterface) {
             $this->addChannelPricesToNewValue($entity);
